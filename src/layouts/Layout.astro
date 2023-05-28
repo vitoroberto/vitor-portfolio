@@ -1,0 +1,65 @@
+---
+import "@fontsource-variable/fredoka";
+import "@fontsource-variable/inter";
+
+export type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="container mx-auto h-screen w-screen max-w-[1200px] bg-zinc-100 px-5 text-neutral-900 dark:bg-neutral-900 dark:text-zinc-300"
+  >
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Fredoka Variable";
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+
+  header > a {
+    font-family: "Fredoka Variable";
+  }
+
+  p,
+  ul {
+    font-family: "Inter Variable", sans-serif;
+    font-weight: normal;
+  }
+</style>
