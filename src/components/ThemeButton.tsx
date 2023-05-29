@@ -14,8 +14,9 @@ export function ThemeButton() {
 
   return (
     <button
-      className="not-sr-only rounded-lg bg-zinc-200 p-4 duration-200 ease-out hover:scale-105 hover:bg-zinc-300 active:scale-95 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+      className="rounded-lg bg-zinc-200 p-4 duration-200 ease-out hover:scale-105 hover:bg-zinc-300 active:scale-95 dark:bg-zinc-800 dark:hover:bg-zinc-700"
       onClick={handleClick}
+      aria-label="Mude a paleta de cores do site"
     >
       {isDarkMode ? <FaSun size={18} /> : <FaMoon size={18} />}
     </button>

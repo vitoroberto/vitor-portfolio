@@ -17,6 +17,7 @@ export function ProjectItem({ ...props }: PropTypes) {
           className="rounded-full bg-black/50 p-3 text-white backdrop-blur-md"
           target="_blank"
           rel="noreferrer noopener"
+          aria-label="Abra a página desse projeto no GitHub"
         >
           <FaGithub size={22} />
         </a>

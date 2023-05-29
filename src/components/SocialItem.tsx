@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 
 type propTypes = {
   href: string;
+  ariaLabel: string;
   children: ReactNode;
 };
 
@@ -14,6 +15,7 @@ export function SocialItem({ ...props }: propTypes) {
           href={props.href}
           target="_blank"
           rel="noreferrer noopener"
+          aria-label={props.ariaLabel}
         >
           {props.children}
         </a>
