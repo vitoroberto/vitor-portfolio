@@ -2,11 +2,11 @@ export const info = {
   projects: [
     {
       id: 1,
-      name: "Meu Portfolio",
+      name: "Meu Portfólio",
       thumbnail: "/assets/images/portfolio-image.png",
       liveUrl: "/",
       githubUrl: "https://github.com/vitoroberto/vitor-portfolio",
-      alt: "Site do meu Portfolio",
+      alt: "Site do meu Portfólio",
     },
     {
       id: 2,
