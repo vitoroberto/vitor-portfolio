@@ -2,11 +2,11 @@ export const info = {
   projects: [
     {
       id: 1,
-      name: "Meu Portfólio",
-      thumbnail: "/assets/images/portfolio-image.webp",
-      liveUrl: "/",
-      githubUrl: "https://github.com/vitoroberto/vitor-portfolio",
-      alt: "Site do meu Portfólio",
+      name: "vite-todo",
+      thumbnail: "/assets/images/vite-todo-image.webp",
+      liveUrl: "https://vt-vite-todo.vercel.app/",
+      githubUrl: "https://github.com/vitoroberto/vite-todo",
+      alt: "Um site para gerenciar tarefas.",
     },
     {
       id: 2,
