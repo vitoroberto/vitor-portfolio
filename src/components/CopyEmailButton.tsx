@@ -6,11 +6,13 @@ type propTypes = {
   ariaLabel: string;
 };
 
-export function SocialItemEmail({ ...props }: propTypes) {
+export function CopyEmailButton({ ...props }: propTypes) {
   const [copied, setCopied] = useState(false);
 
-  function copyToClipboard() {
-    navigator.clipboard.writeText("vroberto.contact@gmail.com");
+  async function copyToClipboard() {
+    const email = "vroberto.contact@gmail.com";
+
+    await navigator.clipboard.writeText(email);
     setCopied(true);
   }
 

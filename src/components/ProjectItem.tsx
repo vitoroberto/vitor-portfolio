@@ -10,7 +10,7 @@ type PropTypes = {
 
 export function ProjectItem({ ...props }: PropTypes) {
   return (
-    <div className="group relative max-h-[25rem] w-full overflow-hidden">
+    <li className="group relative max-h-[25rem] w-full overflow-hidden">
       <div className="absolute right-4 top-4 z-10 flex items-center">
         <a
           href={props.githubUrl}
@@ -34,6 +34,6 @@ export function ProjectItem({ ...props }: PropTypes) {
       <div className="absolute bottom-0 left-0 w-full translate-y-[100%] bg-black/50 p-4 text-white backdrop-blur-md transition duration-500 group-hover:translate-y-0 dark:text-white">
         <h3 className="mr-2 text-xl">{props.name}</h3>
       </div>
-    </div>
+    </li>
   );
 }
