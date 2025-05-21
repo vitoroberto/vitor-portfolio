@@ -10,6 +10,14 @@ export const info = {
     },
     {
       id: 2,
+      name: "next-shortener-url",
+      thumbnail: "/assets/images/next-shortener-url-image.webp",
+      liveUrl: "https://next-shortener-url.vercel.app/",
+      githubUrl: "https://github.com/vitoroberto/next-shortener-url",
+      alt: "Encurtador de urls.",
+    },
+    {
+      id: 3,
       name: "got-quotes",
       thumbnail: "/assets/images/got-quotes-image.webp",
       liveUrl: "https://quotes-got.vercel.app/",
